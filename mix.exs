@@ -3,8 +3,8 @@ defmodule Yunpian.Mixfile do
 
   def project do
     [app: :yunpian,
-     version: "0.1.0",
-     elixir: "~> 1.3",
+     version: "0.1.1",
+     elixir: "~> 1.8",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -27,6 +27,6 @@ defmodule Yunpian.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:poison, "~> 2.0"}, {:httpotion, "~> 3.0.0"}]
+    [{:poison, "~> 3.1"}, {:httpotion, "~> 3.1"}]
   end
 end
